@@ -35,14 +35,16 @@ export function JournalsSection() {
       ref={ref}
       className="py-20 bg-slate-800 dark:bg-slate-900 text-white"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="wrapper">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
           className="flex items-center justify-between mb-16"
         >
-          <h2 className="text-5xl font-bold">Journals</h2>
+          <h2 className="text-[99.2px] font-semibold tracking-tighter">
+            Journals
+          </h2>
           <ChevronDown className="h-8 w-8 text-slate-400" />
         </motion.div>
 
@@ -56,9 +58,11 @@ export function JournalsSection() {
               whileHover={{ x: 10 }}
               className="flex items-center justify-between p-6 bg-slate-700/50 rounded-2xl hover:bg-slate-700 transition-all duration-300 cursor-pointer group"
             >
-              <div className="flex-1">
-                <p className="text-slate-400 text-sm mb-2">{entry.date}</p>
-                <h3 className="text-xl font-semibold group-hover:text-slate-200 transition-colors">
+              <div className="flex-1 leading-10">
+                <p className="text-[43.2px] tracking-tighter text-slate-400 text-sm mb-2">
+                  {entry.date}
+                </p>
+                <h3 className="text-[43.2px] tracking-tighter font-semibold group-hover:text-slate-200 transition-colors">
                   {entry.title}
                 </h3>
               </div>
@@ -78,13 +82,15 @@ export function JournalsSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
         >
           {/* Contact Us Card */}
           <div className="bg-slate-200 text-slate-800 rounded-2xl p-8 relative overflow-hidden">
             <div className="relative z-10">
-              <p className="text-slate-500 text-sm mb-2">Contact Us</p>
-              <h3 className="text-2xl font-bold mb-6 text-balance">
+              <p className="text-slate-500 text-[43.2px] font-medium tracking-tighter leading-6 mb-2">
+                Contact Us
+              </p>
+              <h3 className="text-[43.2px] font-medium tracking-tighter leading-10 mb-6 text-balance">
                 Let Us Know
                 <br />
                 How We Can
@@ -93,7 +99,7 @@ export function JournalsSection() {
               </h3>
               <Button
                 variant="outline"
-                className="bg-transparent border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white"
+                className="bg-transparent text-[38.4px] tracking-tighter rounded-full p-8 border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white"
               >
                 Lets Talk
               </Button>
@@ -110,8 +116,10 @@ export function JournalsSection() {
           {/* Follow Us Card */}
           <div className="bg-slate-300 text-slate-800 rounded-2xl p-8 relative overflow-hidden">
             <div className="relative z-10">
-              <p className="text-slate-600 text-sm mb-2">Follow Us</p>
-              <h3 className="text-2xl font-bold mb-6 text-balance">
+              <p className="text-slate-600 text-[43.2px] font-medium tracking-tighter leading-6 mb-2">
+                Follow Us
+              </p>
+              <h3 className="text-[43.2px] font-medium tracking-tighter leading-10 font-bold mb-6 text-balance">
                 Stay Up To
                 <br />
                 Date With
@@ -120,7 +128,7 @@ export function JournalsSection() {
               </h3>
               <Button
                 variant="outline"
-                className="bg-transparent border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white"
+                className="bg-transparent text-[38.4px] rounded-full p-8 tracking-tighter border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white"
               >
                 Subscribe
               </Button>

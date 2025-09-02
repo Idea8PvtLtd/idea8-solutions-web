@@ -55,15 +55,17 @@ export function CapabilitiesSection() {
 
   return (
     <section id="capabilities" ref={ref} className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="wrapper">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
           className="flex items-center justify-between mb-16"
         >
-          <h2 className="text-5xl font-bold text-foreground">Capabilities</h2>
-          <ChevronDown className="h-8 w-8 text-muted-foreground" />
+          <h2 className="text-[99.2px] font-semibold tracking-tighter text-foreground">
+            Capabilities
+          </h2>
+          <ChevronDown className="h-28 w-28 text-primary" />
         </motion.div>
 
         <motion.div
@@ -89,23 +91,23 @@ export function CapabilitiesSection() {
                 className="w-full py-6 flex items-center justify-between text-left hover:bg-slate-700/50 transition-colors duration-200 rounded-lg px-4"
               >
                 <div className="flex items-center space-x-6">
-                  <span className="text-2xl font-bold text-white">
+                  <span className="text-[43.2px] font-semibold text-white">
                     {capability.id}
                   </span>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-[43.2px] font-semibold text-white">
                     {capability.title}
                   </h3>
                 </div>
                 <div className="flex items-center space-x-4">
                   {expandedItem !== capability.id && (
-                    <p className="text-slate-400 text-sm max-w-md hidden lg:block">
+                    <p className="text-slate-400 text-base max-w-md hidden lg:block">
                       {capability.overview}
                     </p>
                   )}
                   {expandedItem === capability.id ? (
-                    <X className="h-5 w-5 text-slate-400" />
+                    <X className="h-6 w-6 text-slate-400" />
                   ) : (
-                    <Plus className="h-5 w-5 text-slate-400" />
+                    <Plus className="h-6 w-6 text-slate-400" />
                   )}
                 </div>
               </button>
