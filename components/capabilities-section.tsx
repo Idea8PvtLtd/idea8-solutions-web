@@ -60,17 +60,15 @@ export function CapabilitiesSection() {
           transition={{ duration: 0.8 }}
           className="flex items-center justify-between mb-16"
         >
-          <h2 className="text-[99.2px] font-semibold tracking-tighter text-foreground">
-            Capabilities
-          </h2>
-          <ChevronDown className="h-28 w-28 text-primary" />
+          <h2 className="heading-h1 text-foreground">Capabilities</h2>
+          <ChevronDown className="hidden lg:block h-28 w-28 text-primary" />
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-slate-800 dark:bg-slate-900 rounded-2xl p-8 space-y-1"
+          className="bg-slate-800 dark:bg-slate-900 rounded-2xl p-4 md:p-8 space-y-1"
         >
           {capabilities.map((capability, index) => (
             <motion.div
@@ -88,13 +86,9 @@ export function CapabilitiesSection() {
                 }
                 className="w-full py-6 flex items-center justify-between text-left hover:bg-slate-700/50 transition-colors duration-200 rounded-lg px-4"
               >
-                <div className="flex items-center space-x-6 tracking-tighter">
-                  <span className="text-[43.2px] font-semibold text-white">
-                    {capability.id}
-                  </span>
-                  <h3 className="text-[43.2px] font-semibold text-white">
-                    {capability.title}
-                  </h3>
+                <div className="flex items-center space-x-6 heading-h3 text-white">
+                  <span className="hidden md:block">{capability.id}</span>
+                  <h3>{capability.title}</h3>
                 </div>
                 <div className="flex items-center space-x-4">
                   {expandedItem !== capability.id && (

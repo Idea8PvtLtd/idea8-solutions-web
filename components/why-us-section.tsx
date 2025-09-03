@@ -11,7 +11,7 @@ export function WhyUsSection() {
   return (
     <section id="why-us" ref={ref} className="py-20 bg-background">
       <div className="wrapper">
-        <div className="grid grid-cols-1 gap-16 items-start">
+        <div className="grid grid-cols-1 gap-8 lg:gap-16 items-start">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -20,10 +20,8 @@ export function WhyUsSection() {
             className="space-y-8"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <h2 className="text-[99.2px] font-semibold tracking-tighter text-foreground text-balance">
-                Why Us
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
+              <h2 className="heading-h1 text-foreground">Why Us</h2>
+              <p className="paragraph-normal">
                 We're not just a product development company — we're your
                 end-to-end innovation partner. From initial concept validation
                 to market-ready prototypes, we bridge the gap between brilliant
@@ -44,10 +42,10 @@ export function WhyUsSection() {
               <img
                 src="/images/team_1.jpg"
                 alt="Smart device interaction"
-                className="w-full h-screen object-cover rounded-2xl"
+                className="w-full h-[600px] lg:h-screen object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl flex flex-col justify-end p-6">
-                <div className="text-white text-[42px] font-semibold tracking-tighter leading-10">
+                <div className="heading-h3 text-white">
                   IRice
                   <br />A Smart Charger
                   <br />
@@ -59,7 +57,7 @@ export function WhyUsSection() {
             </div>
 
             {/* Bottom Grid */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
@@ -71,10 +69,8 @@ export function WhyUsSection() {
                   className="w-full h-[400px] object-cover rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-2xl flex flex-col justify-end p-6">
-                  <h3 className="text-[32px] font-semibold tracking-tighter leading-6 mb-2 text-white">
-                    Ground Control
-                  </h3>
-                  <p className="text-[32px] font-medium tracking-tighter leading-8 text-white/80">
+                  <h3 className="heading-h4 mb-2 text-white">Ground Control</h3>
+                  <p className="heading-h4 text-white/80">
                     Reimagining The
                     <br />
                     Coffee Brewing
@@ -95,10 +91,8 @@ export function WhyUsSection() {
                   className="w-full h-[400px] object-cover rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-2xl flex flex-col justify-end p-6">
-                  <h3 className="text-[32px] font-semibold tracking-tighter leading-6 mb-2 text-white">
-                    Body Dynamics
-                  </h3>
-                  <p className="text-[32px] font-medium tracking-tighter leading-8 text-white/80">
+                  <h3 className="heading-h4 mb-2 text-white">Body Dynamics</h3>
+                  <p className="heading-h4 text-white/80">
                     Changing
                     <br />
                     Physical Therapy

@@ -131,83 +131,39 @@
 }
 
 @layer utilities {
-  /* Font Spacing Utilities */
-  .tracking-tighter {
-    letter-spacing: -0.05em;
+  /* Heading Size Utilities */
+  .heading-hero {
+    @apply text-7xl lg:text-[138.24px] font-medium leading-14 lg:leading-26 tracking-tighter text-balance;
   }
 
-  .tracking-tight {
-    letter-spacing: -0.025em;
+  .heading-h1 {
+    @apply text-6xl lg:text-[99.2px] font-semibold tracking-tighter text-balance;
   }
 
-  .tracking-normal {
-    letter-spacing: 0em;
+  .heading-h3 {
+    @apply text-[42px] font-semibold tracking-tighter leading-10;
   }
 
-  .tracking-wide {
-    letter-spacing: 0.025em;
+  .heading-h4 {
+    @apply text-[32px] font-medium tracking-tighter leading-8;
   }
 
-  .tracking-wider {
-    letter-spacing: 0.05em;
+  .heading-h3-medium {
+    @apply text-[42px] font-medium tracking-tighter leading-10;
   }
 
-  .tracking-widest {
-    letter-spacing: 0.1em;
+  /* Paragraph Size Utilities */
+  .paragraph-hero {
+    @apply text-lg leading-snug text-pretty tracking-tight font-medium;
   }
 
-  /* Line Spacing Utilities */
-  .leading-none {
-    line-height: 103.68px;
-  }
-
-  .leading-tight {
-    line-height: 1.25;
-  }
-
-  .leading-snug {
-    line-height: 1.375;
-  }
-
-  .leading-normal {
-    line-height: 1.5;
-  }
-
-  .leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .leading-loose {
-    line-height: 2;
+  .paragraph-normal {
+    @apply text-lg text-muted-foreground leading-relaxed text-pretty;
   }
 
   /* Wrapper Utilities */
   .wrapper {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;
-  }
-
-  /* Nordic Design Specific Utilities */
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .text-pretty {
-    text-wrap: pretty;
-  }
-
-  .section-spacing {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .section-spacing-sm {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .section-spacing-lg {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
   }
 }
 

@@ -42,9 +42,7 @@ export function JournalsSection() {
           transition={{ duration: 0.8 }}
           className="flex items-center justify-between mb-16"
         >
-          <h2 className="text-[99.2px] font-semibold tracking-tighter">
-            Journals
-          </h2>
+          <h2 className="heading-h1">Journals</h2>
           <ChevronDown className="h-8 w-8 text-slate-400" />
         </motion.div>
 
@@ -56,13 +54,11 @@ export function JournalsSection() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: 0.1 * index }}
               whileHover={{ x: 10 }}
-              className="flex items-center justify-between p-6 bg-slate-700/50 rounded-2xl hover:bg-slate-700 transition-all duration-300 cursor-pointer group"
+              className="flex flex-col gap-6 md:flex-row items-center justify-between p-6 bg-slate-700/50 rounded-2xl hover:bg-slate-700 transition-all duration-300 cursor-pointer group"
             >
               <div className="flex-1 leading-10">
-                <p className="text-[43.2px] tracking-tighter text-slate-400 text-sm mb-2">
-                  {entry.date}
-                </p>
-                <h3 className="text-[43.2px] tracking-tighter font-semibold group-hover:text-slate-200 transition-colors">
+                <p className="heading-h3 text-slate-400 mb-2">{entry.date}</p>
+                <h3 className="heading-h3 group-hover:text-slate-200 transition-colors">
                   {entry.title}
                 </h3>
               </div>
@@ -82,15 +78,15 @@ export function JournalsSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-[400px] justify-between"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between"
         >
           {/* Contact Us Card */}
           <div className="bg-slate-200 text-slate-800 rounded-2xl p-8 relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
-              <p className="text-slate-500 text-[43.2px] font-medium tracking-tighter leading-6 mb-2">
+              <p className="text-slate-500 heading-h3-medium mb-2">
                 Contact Us
               </p>
-              <h3 className="text-[43.2px] font-medium tracking-tighter leading-10 mb-6 text-balance">
+              <h3 className="heading-h3-medium mb-24">
                 Let Us Know
                 <br />
                 How We Can
@@ -118,15 +114,13 @@ export function JournalsSection() {
           {/* Follow Us Card */}
           <div className="bg-slate-300 text-slate-800 rounded-2xl p-8 relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
-              <p className="text-slate-600 text-[43.2px] font-medium tracking-tighter leading-6 mb-2">
-                Follow Us
-              </p>
-              <h3 className="text-[43.2px] font-medium tracking-tighter leading-10 font-bold mb-6 text-balance">
+              <p className="text-slate-600 heading-h3-medium mb-2">Follow Us</p>
+              <h3 className="heading-h3-medium mb-24">
                 Stay Up To
                 <br />
                 Date With
                 <br />
-                Speck Design
+                Idea8
               </h3>
             </div>
             <div className="relative z-10 mt-auto">

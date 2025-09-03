@@ -19,7 +19,7 @@ export function HeroSection() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10  text-white p-8 pb-20 lg:p-20">
+        <div className="relative z-10 text-white p-8 pb-20 lg:p-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-end">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -27,7 +27,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-6"
             >
-              <h1 className="text-7xl lg:text-[138.24px] font-medium leading-none tracking-tighter text-balance">
+              <h1 className="heading-hero">
                 Idea8
                 <br />
                 Products
@@ -40,7 +40,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="space-y-6"
             >
-              <p className="text-lg leading-snug text-pretty tracking-tight font-medium">
+              <p className="paragraph-hero">
                 Access to Sri Lanka's Leading Product Development Company. From
                 concept to prototype, Idea8 helps innovators and businesses to
                 build world class products in AI, Robotics, IoT and Embedded
