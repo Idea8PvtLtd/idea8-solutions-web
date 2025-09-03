@@ -8,43 +8,41 @@ import { ChevronDown, Plus, X } from "lucide-react";
 const capabilities = [
   {
     id: "01",
-    title: "PRODUCTION PLANNING",
-    overview:
-      "Effective production planning is crucial for a smooth, cost-effective manufacturing process.",
+    title: "RAPID PROTOTYPING",
+    overview: "Rapid Prototyping, MVPs in weeks, not months.",
     description:
-      "Our team strategizes production planning, optimizing timelines, costs, and resources.",
+      "Transform your ideas into working prototypes quickly with our agile development approach and cutting-edge fabrication capabilities.",
     details:
-      "We design a production plan tailored to your product, considering factors such as production capacity, resources, and deadlines.",
+      "Our streamlined prototyping process includes 3D modeling, rapid manufacturing, iterative testing, and validation cycles that compress traditional development timelines from months to weeks.",
   },
   {
     id: "02",
-    title: "CONTRACT MANUFACTURING IDENTIFICATION AND MANAGEMENT",
-    overview:
-      "Strategic partner identification and relationship management for optimal production outcomes.",
+    title: "DEEP TECH EXPERTISE",
+    overview: "Deep Tech expertise in Robotics, AI, IoT, Wearables.",
     description:
-      "We help you identify the best contract manufacturers and manage your relationship with them, ensuring a smooth production process.",
+      "Leverage our specialized knowledge in cutting-edge technologies to build innovative products that push the boundaries of what's possible.",
     details:
-      "Our extensive network and expertise ensure you partner with manufacturers who align with your quality standards and production requirements.",
+      "Our multidisciplinary team combines expertise in machine learning algorithms, embedded systems, sensor integration, robotics control systems, and wearable device engineering to deliver breakthrough solutions.",
   },
   {
     id: "03",
-    title: "MANUFACTURING OVERSIGHT",
+    title: "FULL-CYCLE DEVELOPMENT",
     overview:
-      "Comprehensive quality assurance and production monitoring throughout the manufacturing lifecycle.",
+      "Full-Cycle support from concept, design, hardware, firmware and scaling.",
     description:
-      "We provide rigorous oversight of the manufacturing process, ensuring adherence to the production plan and maintaining product integrity.",
+      "End-to-end product development covering every aspect from initial concept through market-ready solutions and scalable production.",
     details:
-      "Our on-site and remote monitoring systems guarantee consistent quality and timely delivery of your products.",
+      "Our comprehensive approach includes market research, industrial design, hardware engineering, firmware development, testing protocols, and scaling strategies to ensure your product succeeds at every stage.",
   },
   {
     id: "04",
-    title: "SUPPLY CHAIN MANAGEMENT",
+    title: "COST-EFFECTIVE DEVELOPMENT",
     overview:
-      "End-to-end supply chain optimization for efficient product delivery and market success.",
+      "Save up to 50% compared to hiring in the USA, UK, or Singapore, without cutting corners",
     description:
-      "We optimize your supply chain, ensuring efficient delivery of your product to the market.",
+      "Access world-class product development expertise at a fraction of the cost without compromising on quality or innovation.",
     details:
-      "From sourcing raw materials to final distribution, we streamline every aspect of your supply chain for maximum efficiency and cost-effectiveness.",
+      "Our Sri Lankan base allows us to offer premium development services at competitive rates while maintaining international standards, rigorous quality control, and seamless communication with global clients.",
   },
 ];
 
@@ -90,7 +88,7 @@ export function CapabilitiesSection() {
                 }
                 className="w-full py-6 flex items-center justify-between text-left hover:bg-slate-700/50 transition-colors duration-200 rounded-lg px-4"
               >
-                <div className="flex items-center space-x-6">
+                <div className="flex items-center space-x-6 tracking-tighter">
                   <span className="text-[43.2px] font-semibold text-white">
                     {capability.id}
                   </span>

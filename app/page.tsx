@@ -13,7 +13,7 @@ export default function HomePage() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
-      {/* <WhyUsSection /> */}
+      <WhyUsSection />
       <CapabilitiesSection />
       <JournalsSection />
       <Footer />

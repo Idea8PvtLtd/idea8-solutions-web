@@ -82,10 +82,10 @@ export function JournalsSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-[400px] justify-between"
         >
           {/* Contact Us Card */}
-          <div className="bg-slate-200 text-slate-800 rounded-2xl p-8 relative overflow-hidden">
+          <div className="bg-slate-200 text-slate-800 rounded-2xl p-8 relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
               <p className="text-slate-500 text-[43.2px] font-medium tracking-tighter leading-6 mb-2">
                 Contact Us
@@ -97,6 +97,8 @@ export function JournalsSection() {
                 <br />
                 Help You
               </h3>
+            </div>
+            <div className="relative z-10 mt-auto">
               <Button
                 variant="outline"
                 className="bg-transparent text-[38.4px] tracking-tighter rounded-full p-8 border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white"
@@ -106,7 +108,7 @@ export function JournalsSection() {
             </div>
             <div className="absolute bottom-0 right-0">
               <img
-                src="/business-cards-and-design-materials.png"
+                src=""
                 alt="Contact materials"
                 className="w-48 h-32 object-cover"
               />
@@ -114,7 +116,7 @@ export function JournalsSection() {
           </div>
 
           {/* Follow Us Card */}
-          <div className="bg-slate-300 text-slate-800 rounded-2xl p-8 relative overflow-hidden">
+          <div className="bg-slate-300 text-slate-800 rounded-2xl p-8 relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
               <p className="text-slate-600 text-[43.2px] font-medium tracking-tighter leading-6 mb-2">
                 Follow Us
@@ -126,6 +128,8 @@ export function JournalsSection() {
                 <br />
                 Speck Design
               </h3>
+            </div>
+            <div className="relative z-10 mt-auto">
               <Button
                 variant="outline"
                 className="bg-transparent text-[38.4px] rounded-full p-8 tracking-tighter border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white"
