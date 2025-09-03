@@ -9,7 +9,7 @@ export function WhyUsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="why-us" ref={ref} className="py-20 bg-background">
+    <section id="about" ref={ref} className="pt-40 pb-20 bg-background">
       <div className="wrapper">
         <div className="grid grid-cols-1 gap-8 lg:gap-16 items-start">
           {/* Left Content */}

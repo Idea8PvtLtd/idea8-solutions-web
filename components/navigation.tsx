@@ -5,13 +5,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Menu, X, User } from "lucide-react";
+import Link from "next/link";
 
 const navItems = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
-  { name: "Sectors", href: "#sectors" },
-  { name: "Journal", href: "#journal" },
   { name: "Projects", href: "#projects" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const serviceCategories = {
@@ -82,12 +83,14 @@ export function Navigation() {
             {/* Right side buttons */}
             <div className="hidden md:flex items-center space-x-4">
               <ThemeToggle />
-              <Button variant="ghost" size="sm">
+              {/* <Button variant="ghost" size="sm">
                 <User className="h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="rounded">
-                Hire Us
-              </Button>
+              </Button> */}
+              <Link href="#contact">
+                <Button variant="outline" size="rounded">
+                  Hire Us
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -149,7 +152,7 @@ export function Navigation() {
                   </div>
                   <div className="relative">
                     <img
-                      src="/modern-tech-product-design.png"
+                      src="/images/header.jpg"
                       alt="Design showcase"
                       className="w-full h-48 object-cover rounded-lg"
                     />
@@ -182,20 +185,22 @@ export function Navigation() {
                   </a>
                 ))}
                 <div className="px-3 py-2 space-y-2">
-                  <Button
+                  {/* <Button
                     variant="ghost"
                     size="sm"
                     className="w-full justify-start"
                   >
                     <User className="h-4 w-4 mr-2" />
                     Account
-                  </Button>
-                  <Button
-                    size="sm"
-                    className="w-full bg-foreground text-background hover:bg-foreground/90"
-                  >
-                    Hire Us
-                  </Button>
+                  </Button> */}
+                  <Link href="#contact">
+                    <Button
+                      size="sm"
+                      className="w-full bg-foreground text-background hover:bg-foreground/90"
+                    >
+                      Hire Us
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

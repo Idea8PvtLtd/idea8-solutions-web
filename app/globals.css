@@ -137,7 +137,7 @@
   }
 
   .heading-h1 {
-    @apply text-6xl lg:text-[99.2px] font-semibold tracking-tighter text-balance;
+    @apply text-6xl lg:text-[99.2px] font-semibold tracking-tighter text-balance leading-14 lg:leading-26;
   }
 
   .heading-h3 {

@@ -4,7 +4,9 @@ import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
 import { WhyUsSection } from "@/components/why-us-section";
 import { CapabilitiesSection } from "@/components/capabilities-section";
-import { JournalsSection } from "@/components/journals-section";
+import { ServicesSection } from "@/components/services-section";
+import { ProjectsSection } from "@/components/projects-section";
+import { PricingSection } from "@/components/pricing-section";
 import { Footer } from "@/components/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
@@ -15,7 +17,9 @@ export default function HomePage() {
       <HeroSection />
       <WhyUsSection />
       <CapabilitiesSection />
-      <JournalsSection />
+      <ServicesSection />
+      <ProjectsSection />
+      <PricingSection />
       <Footer />
       <ScrollToTop />
     </main>
