@@ -9,6 +9,7 @@ import { ProjectsSection } from "@/components/projects-section";
 import { PricingSection } from "@/components/pricing-section";
 import { Footer } from "@/components/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import PhotoCarousel from "@/components/photo-carousel";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Navigation />
       <HeroSection />
       <WhyUsSection />
+      <PhotoCarousel />
       <CapabilitiesSection />
       <ServicesSection />
       <ProjectsSection />
