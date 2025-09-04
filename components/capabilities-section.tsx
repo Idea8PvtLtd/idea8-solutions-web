@@ -52,7 +52,11 @@ export function CapabilitiesSection() {
   const [expandedItem, setExpandedItem] = useState<string | null>("01");
 
   return (
-    <section id="capabilities" ref={ref} className="py-20 bg-muted/30">
+    <section
+      id="capabilities"
+      ref={ref}
+      className="section-padding bg-muted/30"
+    >
       <div className="wrapper">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

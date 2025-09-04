@@ -78,7 +78,7 @@ export function ProjectsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="projects" ref={ref} className="py-20 bg-muted/30">
+    <section id="projects" ref={ref} className="section-padding bg-muted/30">
       <div className="wrapper">
         {/* Header */}
         <motion.div

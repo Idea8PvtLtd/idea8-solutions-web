@@ -38,7 +38,7 @@ export function ServicesSection() {
     <section
       id="services"
       ref={ref}
-      className="py-20 bg-slate-800 dark:bg-slate-900 text-white"
+      className="section-padding bg-slate-800 dark:bg-slate-900 text-white"
     >
       <div className="wrapper">
         <motion.div

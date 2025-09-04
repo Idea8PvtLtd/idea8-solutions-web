@@ -62,7 +62,7 @@ export function PricingSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="pricing" ref={ref} className="py-20 bg-background">
+    <section id="pricing" ref={ref} className="section-padding bg-background">
       <div className="wrapper">
         {/* Header */}
         <motion.div

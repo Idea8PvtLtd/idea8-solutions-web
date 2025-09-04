@@ -114,7 +114,7 @@ export function WhyUsSection() {
 
   return (
     <>
-      <section id="about" ref={ref} className="pt-40 pb-20 bg-background">
+      <section id="about" ref={ref} className="section-padding bg-background">
         <div className="wrapper">
           <div className="grid grid-cols-1 gap-8 lg:gap-16 items-start">
             {/* Left Content */}

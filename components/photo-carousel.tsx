@@ -19,7 +19,7 @@ const PhotoCarousel = () => {
 
   return (
     <div className="wrapper">
-      <div className="relative w-full overflow-hidden pt-4 pb-20 bg-background">
+      <div className="relative w-full overflow-hidden section-padding-sm bg-background">
         {/* Top Row - Moving Left */}
         <div className="relative mb-4">
           <div className="flex animate-scroll-left">
