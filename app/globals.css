@@ -165,6 +165,33 @@
   .wrapper {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  /* Section Spacing Utilities */
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .section-padding-sm {
+    @apply py-8 sm:py-12 lg:py-16;
+  }
+
+  .section-padding-lg {
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+
+  .section-padding-xl {
+    @apply py-24 sm:py-32 lg:py-40;
+  }
+
+  /* Scrollbar Hide Utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
 }
 
 ::-webkit-scrollbar {

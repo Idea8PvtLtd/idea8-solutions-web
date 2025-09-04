@@ -10,7 +10,7 @@ const footerSections = {
     "contact@idea8.solutions",
     "+94 71 377 9680",
   ],
-  Navigate: ["Projects", "Journal", "Services", "Sectors"],
+  Navigate: ["Services", "Projects", "Pricing", "Contact"],
   Company: ["About", "Careers", "FAQ"],
   Follow: ["Medium", "Instagram", "Twitter", "LinkedIn"],
 };
