@@ -163,13 +163,9 @@ export function WhyUsSection() {
                     <br />
                     Lifestyles
                   </div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileHover={{ opacity: 1, y: 0 }}
-                    className="mt-4 text-white/80 text-sm font-medium"
-                  >
+                  <div className="mt-3 text-white/80 text-sm font-medium">
                     Click to learn more →
-                  </motion.div>
+                  </div>
                 </div>
               </motion.div>
 
@@ -197,13 +193,9 @@ export function WhyUsSection() {
                       <br />
                       Experience
                     </p>
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileHover={{ opacity: 1, y: 0 }}
-                      className="mt-3 text-white/80 text-sm font-medium"
-                    >
+                    <div className="mt-3 text-white/80 text-sm font-medium">
                       Click to learn more →
-                    </motion.div>
+                    </div>
                   </div>
                 </motion.div>
 
@@ -231,13 +223,9 @@ export function WhyUsSection() {
                       <br />
                       Design
                     </p>
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileHover={{ opacity: 1, y: 0 }}
-                      className="mt-3 text-white/80 text-sm font-medium"
-                    >
+                    <div className="mt-3 text-white/80 text-sm font-medium">
                       Click to learn more →
-                    </motion.div>
+                    </div>
                   </div>
                 </motion.div>
               </div>

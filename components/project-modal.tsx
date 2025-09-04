@@ -45,10 +45,10 @@ export function ProjectModal({ project, isOpen, onClose, mousePosition }: any) {
               stiffness: 300,
               duration: 0.4,
             }}
-            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-4xl max-h-[90vh] overflow-y-auto px-4"
+            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-4xl max-h-[90vh] px-4"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="bg-background rounded-2xl shadow-2xl border border-border/10 overflow-hidden">
+            <div className="bg-background rounded-2xl shadow-2xl border border-border/10 overflow-hidden max-h-[90vh] overflow-y-auto scrollbar-hide">
               {/* Header */}
               <div className="relative">
                 <img
@@ -59,7 +59,7 @@ export function ProjectModal({ project, isOpen, onClose, mousePosition }: any) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <button
                   onClick={onClose}
-                  className="absolute top-4 right-4 p-2 bg-black/20 backdrop-blur-sm rounded-full text-white hover:bg-black/40 transition-colors"
+                  className="absolute top-4 right-4 p-2 bg-black/20 backdrop-blur-sm rounded-full text-white hover:bg-black/40 transition-colors cursor-pointer"
                 >
                   <X size={20} />
                 </button>

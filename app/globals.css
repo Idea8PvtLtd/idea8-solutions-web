@@ -165,6 +165,16 @@
   .wrapper {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  /* Scrollbar Hide Utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
 }
 
 ::-webkit-scrollbar {
