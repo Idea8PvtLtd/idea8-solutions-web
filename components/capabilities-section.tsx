@@ -4,47 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronDown, Plus, X } from "lucide-react";
-
-const capabilities = [
-  {
-    id: "01",
-    title: "RAPID PROTOTYPING",
-    overview: "Rapid Prototyping, MVPs in weeks, not months.",
-    description:
-      "Transform your ideas into working prototypes quickly with our agile development approach and cutting-edge fabrication capabilities.",
-    details:
-      "Our streamlined prototyping process includes 3D modeling, rapid manufacturing, iterative testing, and validation cycles that compress traditional development timelines from months to weeks.",
-  },
-  {
-    id: "02",
-    title: "DEEP TECH EXPERTISE",
-    overview: "Deep Tech expertise in Robotics, AI, IoT, Wearables.",
-    description:
-      "Leverage our specialized knowledge in cutting-edge technologies to build innovative products that push the boundaries of what's possible.",
-    details:
-      "Our multidisciplinary team combines expertise in machine learning algorithms, embedded systems, sensor integration, robotics control systems, and wearable device engineering to deliver breakthrough solutions.",
-  },
-  {
-    id: "03",
-    title: "FULL-CYCLE DEVELOPMENT",
-    overview:
-      "Full-Cycle support from concept, design, hardware, firmware and scaling.",
-    description:
-      "End-to-end product development covering every aspect from initial concept through market-ready solutions and scalable production.",
-    details:
-      "Our comprehensive approach includes market research, industrial design, hardware engineering, firmware development, testing protocols, and scaling strategies to ensure your product succeeds at every stage.",
-  },
-  {
-    id: "04",
-    title: "COST-EFFECTIVE DEVELOPMENT",
-    overview:
-      "Save up to 50% compared to hiring in the USA, UK, or Singapore, without cutting corners",
-    description:
-      "Access world-class product development expertise at a fraction of the cost without compromising on quality or innovation.",
-    details:
-      "Our Sri Lankan base allows us to offer premium development services at competitive rates while maintaining international standards, rigorous quality control, and seamless communication with global clients.",
-  },
-];
+import { capabilities } from "../data/home";
 
 export function CapabilitiesSection() {
   const ref = useRef(null);

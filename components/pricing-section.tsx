@@ -5,57 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Check, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const pricingModels = [
-  {
-    id: "milestone",
-    title: "Milestone-Based",
-    subtitle: "Best for Custom Projects",
-    description:
-      "Break the project into phases (Concept → Prototype → Testing → Final Product). Client pays per milestone (e.g., 25% upfront, 25% after prototype, etc.).",
-    features: [
-      "Phased project delivery",
-      "Payment tied to milestones",
-      "Risk mitigation for both parties",
-      "Clear project progression",
-      "Flexible scope adjustments",
-    ],
-    image: "/images/team_1.jpg",
-    popular: false,
-  },
-  {
-    id: "retainer",
-    title: "Monthly Retainer",
-    subtitle: "Best for Ongoing R&D",
-    description:
-      "Client pays a fixed monthly fee for your team's involvement. Scope may be flexible (e.g., R&D support, product iterations, scaling).",
-    features: [
-      "Fixed monthly investment",
-      "Ongoing R&D support",
-      "Flexible scope management",
-      "Continuous innovation",
-      "Priority support access",
-    ],
-    image: "/images/header.jpg",
-    popular: true,
-  },
-  {
-    id: "packages",
-    title: "Fixed-Price Packages",
-    subtitle: "Best for MVPs & Startups",
-    description:
-      "Predefined packages like: MVP Package – $10,000 for 8–10 weeks. Prototype Package – $5,000 for 6 weeks. AI/IoT Pilot Package – $7,500 fixed.",
-    features: [
-      "MVP Package - $10,000 (8-10 weeks)",
-      "Prototype Package - $5,000 (6 weeks)",
-      "AI/IoT Pilot - $7,500 fixed",
-      "Predictable pricing",
-      "Fast project kickoff",
-    ],
-    image: "/images/team_4.jpg",
-    popular: false,
-  },
-];
+import { pricingModels } from "../data/home";
 
 export function PricingSection() {
   const ref = useRef(null);

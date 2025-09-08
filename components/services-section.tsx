@@ -5,30 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const services = [
-  {
-    category: "AI & Machine Learning",
-    title: "Intelligent Systems Development",
-    description:
-      "Custom AI solutions, computer vision, and machine learning models tailored to your business needs.",
-    image: "/images/team_1.jpg",
-  },
-  {
-    category: "Robotics & Automation",
-    title: "Robotic Solutions",
-    description:
-      "Industrial automation, service robots, and autonomous systems for various applications.",
-    image: "/images/header.jpg",
-  },
-  {
-    category: "IoT & Embedded Systems",
-    title: "Connected Device Development",
-    description:
-      "Smart devices, sensor networks, and embedded systems with cloud connectivity.",
-    image: "/images/team_4.jpg",
-  },
-];
+import { services } from "../data/home";
 
 export function ServicesSection() {
   const ref = useRef(null);
