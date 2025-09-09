@@ -62,20 +62,19 @@ export function Navigation() {
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
               <div className="flex items-baseline space-x-10">
                 {navItems.map((item) => (
-                  <motion.a
+                  <a
                     key={item.name}
                     href={item.href}
-                    whileHover={{ y: -2 }}
                     onMouseEnter={() =>
                       item.name === "Services" && setShowServices(true)
                     }
                     onMouseLeave={() =>
                       item.name === "Services" && setShowServices(false)
                     }
-                    className="text-primary hover:text-foreground transition-colors duration-200  hover:font-bold text-lg relative"
+                    className="text-primary hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors duration-200 text-lg relative"
                   >
                     {item.name}
-                  </motion.a>
+                  </a>
                 ))}
               </div>
             </div>

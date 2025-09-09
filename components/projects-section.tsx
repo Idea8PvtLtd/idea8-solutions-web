@@ -5,73 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ChevronDown, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const projects = [
-  {
-    id: "smart-irrigation",
-    title: "Smart Irrigation System",
-    category: "IoT & Agriculture",
-    description:
-      "AI-powered irrigation system that optimizes water usage based on soil moisture, weather data, and crop requirements.",
-    technologies: [
-      "IoT Sensors",
-      "Machine Learning",
-      "Cloud Analytics",
-      "Mobile App",
-    ],
-    image: "/images/team_1.jpg",
-    status: "Completed",
-    year: "2024",
-  },
-  {
-    id: "robotic-arm",
-    title: "Industrial Robotic Arm",
-    category: "Robotics & Automation",
-    description:
-      "Precision robotic arm for manufacturing assembly lines with computer vision and adaptive control systems.",
-    technologies: [
-      "Computer Vision",
-      "ROS",
-      "Industrial Control",
-      "Safety Systems",
-    ],
-    image: "/images/header.jpg",
-    status: "In Development",
-    year: "2024",
-  },
-  {
-    id: "health-monitor",
-    title: "Wearable Health Monitor",
-    category: "Healthcare & Wearables",
-    description:
-      "Advanced wearable device for continuous health monitoring with real-time alerts and data analytics.",
-    technologies: [
-      "Embedded Systems",
-      "Biosensors",
-      "BLE",
-      "Mobile Integration",
-    ],
-    image: "/images/team_4.jpg",
-    status: "Prototype",
-    year: "2024",
-  },
-  {
-    id: "autonomous-drone",
-    title: "Autonomous Delivery Drone",
-    category: "AI & Robotics",
-    description:
-      "Intelligent drone system for autonomous package delivery with obstacle avoidance and route optimization.",
-    technologies: [
-      "Computer Vision",
-      "Path Planning",
-      "GPS Navigation",
-      "AI Control",
-    ],
-    image: "/images/team_2.jpg",
-    status: "Testing",
-    year: "2023",
-  },
-];
+import { projects } from "../data/home";
 
 export function ProjectsSection() {
   const ref = useRef(null);
