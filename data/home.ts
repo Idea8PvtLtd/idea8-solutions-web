@@ -3,7 +3,7 @@ export const aboutProjects = [
     id: 1,
     title: "Twin Robotic Arm",
     subtitle: "A Robotic Arm Solution for Smart T-Shirt Handling",
-    image: "/images/header.jpg",
+    image: "/images/robotic_arm.jpg",
     description:
       "This project introduces a dual robotic arm system designed for automated T-shirt folding. Operating under ROS 2, the two arms collaborate seamlessly: one arm picks and positions T-shirts from a pile, while the other executes precise folding.\n\nA ZED camera provides real-time vision to detect T-shirt size and color, ensuring accuracy and adaptability. The system is developed in Python, offering flexibility for customization to meet diverse client requirements.\n\nBy combining advanced robotics, vision processing, and AI-driven control, this solution significantly increases productivity, reduces manual labor, and delivers consistent results—making it highly valuable for the apparel production and retail industries.",
     features: [
