@@ -10,7 +10,8 @@ const PhotoCarousel = () => {
     "/images/team_5.jpg",
     "/images/team_6.jpg",
     "/images/team_7.jpg",
-    "/images/team_5.jpg",
+    "/images/internal.jpg",
+    "/images/internal_2.jpg",
   ];
 
   // Double the images for seamless loop

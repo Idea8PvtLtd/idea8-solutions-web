@@ -55,9 +55,23 @@ export function ServicesSection() {
                 <h3 className="heading-h4 text-white mb-3 group-hover:text-slate-200 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-300 text-sm leading-relaxed mb-4">
                   {service.description}
                 </p>
+                {service.services && (
+                  <ul className="space-y-2">
+                    {service.services.map(
+                      (serviceItem: string, index: number) => (
+                        <li key={index} className="flex items-start space-x-2">
+                          <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                          <span className="text-slate-300 text-sm leading-relaxed">
+                            {serviceItem}
+                          </span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                )}
               </div>
             </motion.article>
           ))}

@@ -78,24 +78,21 @@ export function CapabilitiesSection() {
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-4">
                     <div>
-                      <h4 className="text-white font-medium mb-2">Overview</h4>
+                      <h4 className="text-white font-medium mb-2">
+                        What We Offer
+                      </h4>
                       <p className="text-slate-300 text-sm leading-relaxed">
                         {capability.overview}
                       </p>
                     </div>
                     <div>
                       <h4 className="text-white font-medium mb-2">
-                        What we do
+                        Why It Matters
                       </h4>
                       <p className="text-slate-300 text-sm leading-relaxed">
                         {capability.description}
                       </p>
                     </div>
-                  </div>
-                  <div className="mt-6">
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      {capability.details}
-                    </p>
                   </div>
                 </motion.div>
               )}

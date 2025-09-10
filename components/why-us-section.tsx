@@ -94,20 +94,20 @@ export function WhyUsSection() {
                   onClick={(e) => handleProjectHover(projects[1], e)}
                 >
                   <img
-                    src="/images/team_2.jpg"
-                    alt="Coffee brewing interface"
+                    src="/images/project_2.jpg"
+                    alt="MTG Card Sorting Machine"
                     className="w-full h-[400px] object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-2xl flex flex-col justify-end p-6 group-hover:from-black/80 transition-all duration-300">
                     <h3 className="heading-h4 mb-2 text-white transform group-hover:translate-y-[-5px] transition-transform duration-300">
-                      Ground Control
+                      MTG
                     </h3>
                     <p className="heading-h4 text-white/80 transform group-hover:translate-y-[-5px] transition-transform duration-300">
-                      Reimagining The
+                      Card Sorting Machine
                       <br />
-                      Coffee Brewing
+                      Saves Time In
                       <br />
-                      Experience
+                      Bulk Sorting
                     </p>
                     <div className="mt-3 text-white/80 text-sm font-medium">
                       Click to learn more →
@@ -122,22 +122,22 @@ export function WhyUsSection() {
                   onClick={(e) => handleProjectHover(projects[2], e)}
                 >
                   <img
-                    src="/images/team_3.jpg"
+                    src="/images/project_3.jpg"
                     alt="Medical sensors"
                     className="w-full h-[400px] object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-2xl flex flex-col justify-end p-6 group-hover:from-black/80 transition-all duration-300">
                     <h3 className="heading-h4 mb-2 text-white transform group-hover:translate-y-[-5px] transition-transform duration-300">
-                      Body Dynamics
+                      IoT-based
                     </h3>
                     <p className="heading-h4 text-white/80 transform group-hover:translate-y-[-5px] transition-transform duration-300">
-                      Changing
+                      Weather &
                       <br />
-                      Physical Therapy
+                      Earthquake
                       <br />
-                      Forever With
+                      Monitoring
                       <br />
-                      Design
+                      System
                     </p>
                     <div className="mt-3 text-white/80 text-sm font-medium">
                       Click to learn more →

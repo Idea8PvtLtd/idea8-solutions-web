@@ -33,25 +33,33 @@ export const aboutProjects = [
   },
   {
     id: 2,
-    title: "Ground Control",
-    subtitle: "Reimagining The Coffee Brewing Experience",
-    image: "/images/team_2.jpg",
+    title: "MTG Card Sorting Machine",
+    subtitle: "A Card Sorting Machine for MTG",
+    image: "/images/project_2.jpg",
     description:
-      "Ground Control transforms your daily coffee ritual into a precision brewing experience. Using advanced sensors and machine learning, it analyzes bean characteristics, water quality, and environmental factors to create the perfect cup every time. The intuitive interface allows both beginners and coffee enthusiasts to achieve café-quality results at home.",
+      "This project develops an automated Magic: The Gathering (MTG) card sorting machine. Using computer vision and OCR, the system identifies each card by title, set, number, and rarity, then sorts it into the correct category. The machine reduces manual sorting time and improves accuracy for collectors, retailers, and tournament organizers.",
+    benefits: [
+      "Saves time in bulk sorting.",
+      "Reduces errors compared to manual sorting.",
+      "Handles old and new MTG editions consistently.",
+      "Supports collectors, retailers, and event organizers.",
+      "Can be upgraded for multi-card sorting or pricing integration.",
+    ],
     features: [
-      "Precision temperature and timing control for optimal extraction",
-      "Bean recognition system that adjusts brewing parameters automatically",
-      "Water quality analysis with mineral content optimization",
-      "Recipe library with expert-curated brewing profiles",
-      "Remote brewing control via smartphone app",
-      "Maintenance alerts and cleaning cycle automation",
+      "Automated Detection – Recognizes MTG cards using OCR and image matching.",
+      "High Accuracy – Identifies title, set, number, and rarity, even across different card editions.",
+      "Fast Sorting – Separates large batches of cards quickly and efficiently.",
+      "Custom Database Integration – Matches detected cards against an internal MTG card database.",
+      "Error Handling – Fallback search by title when card number is unclear.",
+      "Scalability – Adaptable to sort other trading card games.",
     ],
     technologies: [
-      "IoT Sensors",
-      "Computer Vision",
-      "Mobile Development",
-      "Data Analytics",
-      "Embedded Systems",
+      "Cameras (Top + Bottom)",
+      "OCR (Optical Character Recognition)",
+      "Python",
+      "Database (MySQL/CSV)",
+      "Mechanical Sorting Unit",
+      "Machine Learning Models",
     ],
     stats: {
       duration: "12 Months",
@@ -61,26 +69,26 @@ export const aboutProjects = [
   },
   {
     id: 3,
-    title: "Body Dynamics",
-    subtitle: "Changing Physical Therapy Forever With Design",
-    image: "/images/team_3.jpg",
+    title: "Weather & Earthquake Monitoring System",
+    subtitle: "IoT-based Weather & Earthquake Monitoring System",
+    image: "/images/project_3.jpg",
     description:
-      "Body Dynamics reimagines physical therapy through intelligent motion tracking and personalized rehabilitation programs. Using advanced sensors and AI-powered movement analysis, it provides real-time feedback to patients and therapists, making recovery more effective and engaging. The system adapts to individual progress, ensuring optimal rehabilitation outcomes.",
+      "This project delivers an IoT-enabled weather and earthquake monitoring system with real-time data collection and communication. Built on a custom PCB with outdoor insulation, the system integrates Wi-Fi, GSM, LoRa, and GPS to ensure reliable data transmission from remote locations. Designed for resilience, it provides accurate monitoring and early-warning capabilities.",
     features: [
-      "3D motion capture and real-time movement analysis",
-      "Personalized therapy programs based on injury type and progress",
-      "Gamified exercises that make rehabilitation engaging",
-      "Progress tracking with detailed analytics for therapists",
-      "Remote monitoring capabilities for home-based therapy",
-      "Integration with healthcare systems for seamless data sharing",
+      "Multi-Mode Communication – Supports Wi-Fi, GSM, and LoRa for flexible data transmission.",
+      "GPS Integration – Provides precise location tracking for sensor data.",
+      "Custom PCB – Fully designed in-house with optimized power and communication circuits.",
+      "Weather Monitoring – Captures environmental parameters (temperature, humidity, pressure, etc.).",
+      "Earthquake Monitoring – Detects seismic activity through vibration and motion sensors.",
+      "Outdoor-Ready – Encased in weatherproof housing for durability in harsh conditions.",
+      "Real-Time Alerts – Sends instant notifications via cloud dashboards or mobile apps.",
     ],
     technologies: [
-      "Computer Vision",
-      "AI/ML",
-      "3D Sensors",
-      "Healthcare APIs",
-      "React Native",
-      "Cloud Computing",
+      "Python",
+      "C++",
+      "AWS",
+      "GPS Positioning",
+      "Low Latency Wireless Transmission",
     ],
     stats: {
       duration: "18 Months",
@@ -94,64 +102,78 @@ export const capabilities = [
   {
     id: "01",
     title: "RAPID PROTOTYPING",
-    overview: "Rapid Prototyping, MVPs in weeks, not months.",
+    overview:
+      "From idea to MVP in weeks—not months. Our in-house team accelerates product development by combining design, engineering, and manufacturing under one roof.",
     description:
-      "Transform your ideas into working prototypes quickly with our agile development approach and cutting-edge fabrication capabilities.",
-    details:
-      "Our streamlined prototyping process includes 3D modeling, rapid manufacturing, iterative testing, and validation cycles that compress traditional development timelines from months to weeks.",
+      "We help you get to market 30% faster than traditional development cycles, so you can validate ideas, attract investors, and outpace competitors.",
   },
   {
     id: "02",
     title: "DEEP TECH EXPERTISE",
-    overview: "Deep Tech expertise in Robotics, AI, IoT, Wearables.",
+    overview:
+      "Proven experience across Robotics, AI, IoT, and Wearables. Our engineers specialize in cutting-edge algorithms, embedded systems, and sensor integration.",
     description:
-      "Leverage our specialized knowledge in cutting-edge technologies to build innovative products that push the boundaries of what's possible.",
-    details:
-      "Our multidisciplinary team combines expertise in machine learning algorithms, embedded systems, sensor integration, robotics control systems, and wearable device engineering to deliver breakthrough solutions.",
+      "We don’t just follow trends—we push boundaries. Leveraging deep cross-industry expertise, we deliver breakthrough solutions that scale across domains.",
   },
   {
     id: "03",
     title: "FULL-CYCLE DEVELOPMENT",
     overview:
-      "Full-Cycle support from concept, design, hardware, firmware and scaling.",
+      "End-to-end support from concept and design, through hardware and firmware, to scaling and production.",
     description:
-      "End-to-end product development covering every aspect from initial concept through market-ready solutions and scalable production.",
-    details:
-      "Our comprehensive approach includes market research, industrial design, hardware engineering, firmware development, testing protocols, and scaling strategies to ensure your product succeeds at every stage.",
+      "You get a single partner for the entire journey—eliminating hand-offs, reducing delays, andensuring seamless execution. All intellectual property stays with you.",
   },
   {
     id: "04",
     title: "COST-EFFECTIVE DEVELOPMENT",
     overview:
-      "Save up to 50% compared to hiring in the USA, UK, or Singapore, without cutting corners",
+      "High-quality engineering talent at competitive global rates, without cutting corners.",
     description:
-      "Access world-class product development expertise at a fraction of the cost without compromising on quality or innovation.",
-    details:
-      "Our Sri Lankan base allows us to offer premium development services at competitive rates while maintaining international standards, rigorous quality control, and seamless communication with global clients.",
+      "Save up to 50% compared to hiring in the USA, UK, or Singapore, while still working with engineers holding Master’s-level credentials.",
   },
 ];
 
 export const services = [
   {
-    category: "AI & Machine Learning",
-    title: "Intelligent Systems Development",
-    description:
-      "Custom AI solutions, computer vision, and machine learning models tailored to your business needs.",
-    image: "/images/team_1.jpg",
-  },
-  {
     category: "Robotics & Automation",
     title: "Robotic Solutions",
     description:
-      "Industrial automation, service robots, and autonomous systems for various applications.",
-    image: "/images/header.jpg",
+      "Industrial automation, service robots, and autonomous systems are designed for precision and scalability.",
+    services: [
+      "Industrial & Service Robotics",
+      "Robotic Arms with Custom Grippers",
+      "Autonomous Navigation (UAVs, UGVs, AMRs)",
+      "Custom Robotic Arms & End-Effectors",
+      "Human–Robot Collaboration Systems",
+    ],
+    image: "/images/service_1.jpg",
   },
   {
     category: "IoT & Embedded Systems",
     title: "Connected Device Development",
     description:
-      "Smart devices, sensor networks, and embedded systems with cloud connectivity.",
-    image: "/images/team_4.jpg",
+      "Smart devices and sensor networks are integrated with reliable embedded systems and cloud connectivity",
+    services: [
+      "IoT Devices & Gateways",
+      "Embedded System Design (MCUs, SoCs, FPGA)",
+      "Wireless Communication (LoRa, BLE, GSM, Wi-Fi)",
+      "Cloud & Edge Integration",
+    ],
+    image: "/images/service_2.jpg",
+  },
+
+  {
+    category: "Mechanical & Electrical",
+    title: "Hardware Engineering",
+    description:
+      "Robust hardware development to turn concepts into manufacturable, scalable products.",
+    services: [
+      "Mechanical Engineering (CAD, Simulation, Prototyping)",
+      "Electrical Engineering (PCB Design, Power Systems)",
+      "New Product Introduction (NPI) & Manufacturing Support",
+      "Reliability & Compliance Testing",
+    ],
+    image: "/images/service_3.jpg",
   },
 ];
 
@@ -236,7 +258,7 @@ export const pricingModels = [
       "Clear project progression",
       "Flexible scope adjustments",
     ],
-    image: "/images/team_1.jpg",
+    image: "/images/milestone_based.jpg",
     popular: false,
   },
   {
@@ -252,7 +274,7 @@ export const pricingModels = [
       "Continuous innovation",
       "Priority support access",
     ],
-    image: "/images/header.jpg",
+    image: "/images/monthly_retainer.jpg",
     popular: true,
   },
   {
@@ -268,7 +290,7 @@ export const pricingModels = [
       "Predictable pricing",
       "Fast project kickoff",
     ],
-    image: "/images/team_4.jpg",
+    image: "/images/fixed_price.jpg",
     popular: false,
   },
 ];
