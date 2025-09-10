@@ -105,6 +105,30 @@ export function ProjectModal({ project, isOpen, onClose, mousePosition }: any) {
                     </div>
                   </div>
 
+                  {/* Benefits */}
+                  {project.benefits && (
+                    <div>
+                      <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
+                        Benefits
+                      </h3>
+                      <div className="grid grid-cols-1 gap-3 sm:gap-4">
+                        {project.benefits.map((benefit: any, index: any) => (
+                          <motion.div
+                            key={index}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.5 + index * 0.1 }}
+                            className="flex items-start space-x-3 p-3 sm:p-4 bg-muted/30 rounded-lg"
+                          >
+                            <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                            <span className="text-sm sm:text-base text-foreground/80">
+                              {benefit}
+                            </span>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   {/* Key Features */}
                   <div>
                     <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
