@@ -96,9 +96,13 @@ export function ProjectModal({ project, isOpen, onClose, mousePosition }: any) {
                     <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
                       About the Project
                     </h3>
-                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                      {project.description}
-                    </p>
+                    <div className="text-sm sm:text-base text-foreground/80 leading-relaxed space-y-4">
+                      {project.description
+                        .split("\n\n")
+                        .map((paragraph: string, index: number) => (
+                          <p key={index}>{paragraph}</p>
+                        ))}
+                    </div>
                   </div>
 
                   {/* Key Features */}
