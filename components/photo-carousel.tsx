@@ -1,22 +1,77 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const PhotoCarousel = () => {
   // Sample images - replace with your actual image URLs
-  const images = [
+  const topRowBaseImages = [
     "/images/team_1.jpg",
     "/images/team_2.jpg",
     "/images/team_3.jpg",
     "/images/team_4.jpg",
     "/images/team_5.jpg",
+  ];
+
+  const bottomRowBaseImages = [
     "/images/team_6.jpg",
     "/images/team_7.jpg",
     "/images/internal.jpg",
     "/images/internal_2.jpg",
+    "/images/2nd_image.jpg",
+    "/images/service_1.jpg",
+    "/images/header.jpg",
   ];
 
-  // Double the images for seamless loop
-  const topRowImages = [...images, ...images];
-  const bottomRowImages = [...images, ...images];
+  const [topRowImages, setTopRowImages] = useState<string[]>([]);
+  const [bottomRowImages, setBottomRowImages] = useState<string[]>([]);
+
+  // Shuffle array function
+  const shuffleArray = (array: string[]) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
+  // Initialize carousel with shuffled images
+  useEffect(() => {
+    const shuffledTop = shuffleArray(topRowBaseImages);
+    const shuffledBottom = shuffleArray(bottomRowBaseImages);
+
+    // Create seamless loops with tripled images for infinite scrolling
+    setTopRowImages([...shuffledTop, ...shuffledTop, ...shuffledTop]);
+    setBottomRowImages([
+      ...shuffledBottom,
+      ...shuffledBottom,
+      ...shuffledBottom,
+    ]);
+  }, []);
+
+  // Rotate images between rows periodically
+  useEffect(() => {
+    const rotateImages = () => {
+      // Shuffle top row images
+      const newShuffledTop = shuffleArray(topRowBaseImages);
+      setTopRowImages([
+        ...newShuffledTop,
+        ...newShuffledTop,
+        ...newShuffledTop,
+      ]);
+
+      // Shuffle bottom row images
+      const newShuffledBottom = shuffleArray(bottomRowBaseImages);
+      setBottomRowImages([
+        ...newShuffledBottom,
+        ...newShuffledBottom,
+        ...newShuffledBottom,
+      ]);
+    };
+
+    // Rotate images every 40 seconds (half of animation duration)
+    const rotationInterval = setInterval(rotateImages, 40000);
+
+    return () => clearInterval(rotationInterval);
+  }, []);
 
   return (
     <div className="wrapper">
@@ -32,7 +87,7 @@ const PhotoCarousel = () => {
                 <img
                   src={src}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300 cursor-grab"
                 />
               </div>
             ))}
@@ -50,7 +105,7 @@ const PhotoCarousel = () => {
                 <img
                   src={src}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300 cursor-grab"
                 />
               </div>
             ))}
@@ -69,13 +124,13 @@ const PhotoCarousel = () => {
               transform: translateX(0);
             }
             100% {
-              transform: translateX(-50%);
+              transform: translateX(-100%);
             }
           }
 
           @keyframes scroll-right {
             0% {
-              transform: translateX(-50%);
+              transform: translateX(-100%);
             }
             100% {
               transform: translateX(0);
@@ -83,11 +138,11 @@ const PhotoCarousel = () => {
           }
 
           .animate-scroll-left {
-            animation: scroll-left 40s linear infinite;
+            animation: scroll-left 80s linear infinite;
           }
 
           .animate-scroll-right {
-            animation: scroll-right 40s linear infinite;
+            animation: scroll-right 80s linear infinite;
           }
         `}</style>
       </div>
