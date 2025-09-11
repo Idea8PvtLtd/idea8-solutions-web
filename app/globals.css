@@ -145,7 +145,7 @@
   }
 
   .heading-h4 {
-    @apply text-[32px] font-medium tracking-tighter leading-8;
+    @apply text-[32px] font-semibold tracking-tighter leading-8;
   }
 
   .heading-h3-medium {
