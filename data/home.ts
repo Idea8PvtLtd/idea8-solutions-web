@@ -3,7 +3,7 @@ export const aboutProjects = [
     id: 1,
     title: "Twin Robotic Arm",
     subtitle: "A Robotic Arm Solution for Smart T-Shirt Handling",
-    image: "/images/robotic_arm.jpg",
+    image: "/images/2nd_image.jpg",
     description:
       "This project introduces a dual robotic arm system designed for automated T-shirt folding. Operating under ROS 2, the two arms collaborate seamlessly: one arm picks and positions T-shirts from a pile, while the other executes precise folding.\n\nA ZED camera provides real-time vision to detect T-shirt size and color, ensuring accuracy and adaptability. The system is developed in Python, offering flexibility for customization to meet diverse client requirements.\n\nBy combining advanced robotics, vision processing, and AI-driven control, this solution significantly increases productivity, reduces manual labor, and delivers consistent results—making it highly valuable for the apparel production and retail industries.",
     features: [
@@ -35,7 +35,7 @@ export const aboutProjects = [
     id: 2,
     title: "MTG Card Sorting Machine",
     subtitle: "A Card Sorting Machine for MTG",
-    image: "/images/project_2.jpg",
+    image: "/images/2nd_image.jpg",
     description:
       "This project develops an automated Magic: The Gathering (MTG) card sorting machine. Using computer vision and OCR, the system identifies each card by title, set, number, and rarity, then sorts it into the correct category. The machine reduces manual sorting time and improves accuracy for collectors, retailers, and tournament organizers.",
     benefits: [
@@ -71,7 +71,7 @@ export const aboutProjects = [
     id: 3,
     title: "Weather & Earthquake Monitoring System",
     subtitle: "IoT-based Weather & Earthquake Monitoring System",
-    image: "/images/project_3.jpg",
+    image: "/images/2nd_image.jpg",
     description:
       "This project delivers an IoT-enabled weather and earthquake monitoring system with real-time data collection and communication. Built on a custom PCB with outdoor insulation, the system integrates Wi-Fi, GSM, LoRa, and GPS to ensure reliable data transmission from remote locations. Designed for resilience, it provides accurate monitoring and early-warning capabilities.",
     features: [

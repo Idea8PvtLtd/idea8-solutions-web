@@ -50,7 +50,7 @@ export function CapabilitiesSection() {
                 }
                 className="w-full py-6 flex items-center justify-between text-left hover:bg-slate-700/50 transition-colors duration-200 rounded-lg px-4"
               >
-                <div className="flex items-center space-x-6 heading-h3 text-white">
+                <div className="flex items-center space-x-6 heading-h4 text-white">
                   <span className="hidden md:block">{capability.id}</span>
                   <h3>{capability.title}</h3>
                 </div>
