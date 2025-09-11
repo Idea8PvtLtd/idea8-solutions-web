@@ -121,7 +121,7 @@ export const capabilities = [
     overview:
       "End-to-end support from concept and design, through hardware and firmware, to scaling and production.",
     description:
-      "You get a single partner for the entire journey—eliminating hand-offs, reducing delays, andensuring seamless execution. All intellectual property stays with you.",
+      "You get a single partner for the entire journey—eliminating hand-offs, reducing delays, and ensuring seamless execution. All intellectual property stays with you.",
   },
   {
     id: "04",
@@ -288,7 +288,7 @@ export const pricingModels = [
       "Prototype Package - $5,000 (6 weeks)",
       "AI/IoT Pilot - $7,500 fixed",
       "Predictable pricing",
-      "Fast project kickoff",
+      "Fast project kick off",
     ],
     image: "/images/fixed_price.jpg",
     popular: false,

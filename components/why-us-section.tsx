@@ -67,7 +67,7 @@ export function WhyUsSection() {
                   muted
                   loop
                   playsInline
-                  className="w-full h-[600px] lg:h-screen object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-[calc(100vh-4rem)] lg:h-[calc(100vh-6rem)] object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl flex flex-col justify-end p-6 group-hover:from-black/70 transition-all duration-300">
                   <div className="heading-h3 text-white transform group-hover:translate-y-[-10px] transition-transform duration-300">
