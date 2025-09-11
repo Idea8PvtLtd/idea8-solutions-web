@@ -176,14 +176,14 @@ export function Navigation() {
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navItems.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="block px-3 py-2 text-muted-foreground hover:text-foreground transition-colors duration-200"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
                 <div className="px-3 py-2 space-y-2">
                   {/* <Button
