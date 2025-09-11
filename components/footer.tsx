@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { Button } from "./ui/button";
 import { useRef } from "react";
+import Link from "next/link";
 
 const footerSections = {
   Location: [
@@ -93,7 +94,7 @@ export function Footer() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-12">
           {/* Idea8 Solutions Branding */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -101,13 +102,15 @@ export function Footer() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center space-x-2">
-              <img
-                src="/logo-dark.png"
-                alt="Idea8 Solutions"
-                className="h-8 w-auto"
-              />
-            </div>
+            <Link href="/">
+              <div className="flex items-center space-x-2">
+                <img
+                  src="/logo-dark.png"
+                  alt="Idea8 Solutions"
+                  className="h-8 w-auto"
+                />
+              </div>
+            </Link>
           </motion.div>
 
           {/* Footer Sections */}
@@ -125,12 +128,12 @@ export function Footer() {
               <ul className="space-y-2">
                 {links.map((link) => (
                   <li key={link}>
-                    <a
+                    <Link
                       href="#"
                       className="text-white hover:text-slate-300 transition-colors duration-200 text-lg"
                     >
                       {link}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -46,16 +46,18 @@ export function Navigation() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0">
-              <img
-                src="/logo-light.png"
-                alt="Idea8 Solutions"
-                className="h-8 w-auto dark:hidden"
-              />
-              <img
-                src="/logo-dark.png"
-                alt="Idea8 Solutions"
-                className="h-8 w-auto hidden dark:block"
-              />
+              <Link href="/">
+                <img
+                  src="/logo-light.png"
+                  alt="Idea8 Solutions"
+                  className="h-8 w-auto dark:hidden"
+                />
+                <img
+                  src="/logo-dark.png"
+                  alt="Idea8 Solutions"
+                  className="h-8 w-auto hidden dark:block"
+                />
+              </Link>
             </motion.div>
 
             {/* Desktop Navigation */}
